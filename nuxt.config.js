@@ -42,7 +42,6 @@ module.exports = {
     ** Load Vuetify CSS globally
     */
     css: [
-        "~/assets/app.styl",
         "~/assets/main.css"
     ],
     apollo: {
