@@ -1,6 +1,10 @@
 <template>
     <v-toolbar flat style="border-bottom: 1px #EEEEEE solid;">
-        <v-toolbar-title>Help Me Grow (Replace me with logo)</v-toolbar-title>
+        <v-toolbar-title>
+            <nuxt-link to="/">
+                <img src="/logo.jpg" style="max-height: 40px;"/>
+            </nuxt-link>
+        </v-toolbar-title>
         <v-spacer/>
         <v-btn to="/" text>
             Home

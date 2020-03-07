@@ -4,7 +4,8 @@
 
 <script>
     export default {
-        name: "profile"
+        name: "profile",
+        layout: "appDefault",
     }
 </script>
 
