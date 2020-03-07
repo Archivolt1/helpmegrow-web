@@ -4,7 +4,8 @@
 
 <script>
     export default {
-        name: "diary"
+        name: "diary",
+        layout: "appDefault",
     }
 </script>
 

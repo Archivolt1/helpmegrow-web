@@ -34,7 +34,8 @@
 
 <script>
     export default {
-        name: "agenda"
+        name: "agenda",
+        layout: "appDefault",
     }
 </script>
 
