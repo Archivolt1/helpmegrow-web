@@ -18,12 +18,6 @@
     </v-container>
 </template>
 
-
-
-
-
-
-
 <script>
     //logic
     export default {

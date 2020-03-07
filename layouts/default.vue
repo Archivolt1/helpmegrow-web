@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import MainToolbar from "../components/app/main-toolbar";
+    import MainToolbar from "../components/app/mainToolbar";
     export default {
         name: "default",
         components: {MainToolbar}

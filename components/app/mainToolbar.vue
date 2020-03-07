@@ -1,7 +1,7 @@
 <template>
     <v-toolbar flat style="border-bottom: 1px #EEEEEE solid;">
         <v-toolbar-title>Help Me Grow (Replace me with logo)</v-toolbar-title>
-        <v-spacer></v-spacer>
+        <v-spacer/>
         <v-btn to="/" text>
             Home
         </v-btn>
@@ -16,7 +16,7 @@
 
 <script>
     export default {
-        name: "main-toolbar"
+        name: "mainToolbar"
     }
 </script>
 

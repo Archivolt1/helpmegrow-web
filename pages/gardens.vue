@@ -4,7 +4,15 @@
 
 <script>
     export default {
-        name: "gardens"
+        name: "gardens",
+        head() {
+            return {
+                title: "Gardens"
+            };
+        },
+        layout: "appDefault",
+        data: () => ({
+        })
     }
 </script>
 
