@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <main>
+        <main class="mr-0">
             <v-navigation-drawer :mini-variant-width="70" absolute dark expand-on-hover permanent>
                 <v-list nav>
                     <v-list-item class="px-2">
@@ -43,7 +43,7 @@
                     </v-list-item>
                 </v-list>
             </v-navigation-drawer>
-            <nuxt style="margin-left: 70px; margin-right: 0;"/>
+            <nuxt style="margin-left: 70px; min-width: 100%;"/>
         </main>
     </v-app>
 </template>
