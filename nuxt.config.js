@@ -10,6 +10,13 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = {
+    buildModules: [
+        // Simple usage
+        '@nuxtjs/vuetify',
+
+        // With options
+        ['@nuxtjs/vuetify', { /* module options */ }]
+    ],
     server: {
         port: 3000, // default: 3000
         host: 'localhost', // default: localhost, change to your local IP for remote device testing.
