@@ -12,9 +12,10 @@
 }
 
 /* Font settings */
-html {
+.v-application {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
+    font-family: 'Inter var', sans-serif !important;
 }
 
 @supports (font-variation-settings: normal) {
