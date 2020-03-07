@@ -13,10 +13,10 @@
             And so should you.
         </v-row>
         <v-row justify="center" class="mb-5">
-            plz keep your plants alive 🌵
+            plz keep your plants alive 💯😤🚫🧢
         </v-row>
-        <v-img position="center">
-            <img src="../static/animal crossing.jpg" height="783" width="640"/>
+        <v-img class="text-center">
+            <img src="../static/helpme.JPG" height="398" width="652"/>
         </v-img>
     </v-container>
 </template>
