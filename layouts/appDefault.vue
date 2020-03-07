@@ -2,9 +2,6 @@
     <v-navigation-drawer :mini-variant-width="70" absolute dark expand-on-hover permanent>
         <v-list nav>
             <v-list-item class="px-2">
-                <h1>LOGO HERE</h1>
-            </v-list-item>
-            <v-list-item class="px-2">
                 <v-list-item-avatar>
                     <v-img src="https://randomuser.me/api/portraits/women/85.jpg"/>
                 </v-list-item-avatar>
