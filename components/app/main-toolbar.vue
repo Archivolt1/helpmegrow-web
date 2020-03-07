@@ -8,7 +8,7 @@
         <v-btn to="/signup" text>
             Sign Up
         </v-btn>
-        <v-btn to="/signin" depressed color="green" class="white--text">
+        <v-btn to="/signin" text color="green">
             Sign In
         </v-btn>
     </v-toolbar>
