@@ -1,0 +1,35 @@
+/* Component Transitions */
+.page-enter-active, .page-leave-active {
+    transition: opacity 220ms;
+}
+
+.page-enter, .page-leave-to {
+    opacity: 0.15;
+}
+
+.rounded {
+    border-radius: 16px !important;
+}
+
+/* Font settings */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+        font-kerning: auto;
+        overflow-wrap: break-word;
+        line-break: auto;
+    }
+}
+
+/* Formatted text for messaging components */
+pre {
+    font-family: "Inter", -apple-system, "Segoe UI", "Ubuntu", sans-serif !important;
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}

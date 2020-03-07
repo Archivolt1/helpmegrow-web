@@ -1,0 +1,25 @@
+{
+  "name": "helpmegrow-web",
+  "scripts": {
+    "dev": "nuxt dev -o",
+    "build": "nuxt build --spa",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc19",
+    "graphql-tag": "^2.10.3",
+    "nuxt": "^2.11.0",
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.15"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-server-renderer": "^2.6.11",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
