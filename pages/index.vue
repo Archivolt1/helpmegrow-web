@@ -1,23 +1,23 @@
 <template>
     <v-container>
-        <v-row class="font-weight-bold display-2 mb-5" justify="center">
-            What is Help Me Grow?
+        <v-row>
+            <v-col>
+                <h1 class="display-2 font-weight-bold">Keep track of your garden</h1>
+                <p class="mt-2">Get the app that helps you keep your plants alive</p>
+                <v-btn large color="primary" depressed to="/signup" class="mt-5">Sign Up Now</v-btn>
+            </v-col>
+            <v-col>
+                <img src="/homepage-splash-1.jpg" alt="Beautiful Garden" style="min-width: 100%; height: 256px;">
+            </v-col>
         </v-row>
-        <v-row justify="center" class="mb-1">
-            We are a small Indie company who focuses on your plants.
+        <v-row class="mb-1" justify="center">
+            <v-col>
+
+            </v-col>
+            <v-col>
+                <h2 class="headline font-weight-bold">Focus on what you need to do</h2>
+            </v-col>
         </v-row>
-        <v-row justify="center" class="mb-1">
-            We like plants.
-        </v-row>
-        <v-row justify="center" class="mb-1">
-            And so should you.
-        </v-row>
-        <v-row justify="center" class="mb-5">
-            plz keep your plants alive 💯😤🚫🧢
-        </v-row>
-        <v-img class="text-center">
-            <img src="../static/helpme.JPG" height="398" width="652"/>
-        </v-img>
     </v-container>
 </template>
 

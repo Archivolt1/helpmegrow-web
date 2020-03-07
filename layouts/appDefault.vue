@@ -43,7 +43,7 @@
                     </v-list-item>
                 </v-list>
             </v-navigation-drawer>
-            <nuxt style="margin-left: 70px"/>
+            <nuxt style="margin-left: 70px; margin-right: 0;"/>
         </main>
     </v-app>
 </template>
