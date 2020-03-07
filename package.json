@@ -12,10 +12,10 @@
     "@nuxtjs/apollo": "^4.0.0-rc19",
     "graphql-tag": "^2.10.3",
     "nuxt": "^2.11.0",
-    "vue": "^2.6.11",
-    "vuetify": "^2.2.15"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-server-renderer": "^2.6.11",

@@ -25,24 +25,6 @@ module.exports = {
     modules: [
         "@nuxtjs/apollo"
     ],
-    pwa: {
-        manifest: {
-            name: 'Help Me Grow',
-            lang: 'en-US',
-            display: 'standalone',
-            categories: ["utilities"],
-            description: "Next-gen gardening diary.",
-            orientation: 'portrait-primary',
-            scope: 'https://www.helpmegrow.com',
-            start_url: 'https://www.helpmegrow.com'
-        },
-        meta: {
-            mobileApp: true,
-            name: "Help Me Grow",
-            author: "Help Me Grow LLC",
-            description: "Next-gen gardening diary.",
-        }
-    },
     /*
     ** Load Vuetify & vuex-persistedstate into the app
     */
@@ -113,9 +95,9 @@ module.exports = {
             },
             { hid: "og:image", property: "og:image", content: "https://www.helpmegrow.com/logo.jpg" }
         ],
-        script: [
+        /*script: [
             { src: "https://polyfill.io/v3/polyfill.min.js?flags=gated&rum=true&features=es6%2Cdefault%2Ces5%2Ces2017%2Ces2016" }
-        ],
+        ],*/
         link: [
             { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
             {
@@ -160,5 +142,5 @@ module.exports = {
                 ];
             }
         }
-    }
+    },
 };
