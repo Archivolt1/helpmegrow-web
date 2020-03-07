@@ -24,7 +24,12 @@
 <script>
     //logic
     export default {
-        name: "index"
+        name: "index",
+        head() {
+            return {
+                title: "Home"
+            };
+        }
     }
 </script>
 
