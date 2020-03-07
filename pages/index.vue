@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-row class="font-weight-bold display-2" justify="center">
+        <v-row class="font-weight-bold display-2 mb-5" justify="center">
             What is Help Me Grow?
         </v-row>
         <v-row justify="center">
