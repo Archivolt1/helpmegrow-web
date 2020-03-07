@@ -12,8 +12,20 @@
         <v-row justify="center" class="mb-1">
             to do 3
         </v-row>
-        <v-row justify="center" class="mb-5">
+        <v-row justify="center" class="mb-1">
             to do 4
+        </v-row>
+        <v-row justify="center" class="mb-1">
+            to do 5
+        </v-row>
+        <v-row justify="center" class="mb-1">
+            to do 6
+        </v-row>
+        <v-row justify="center" class="mb-1">
+            to do 7
+        </v-row>
+        <v-row justify="center" class="mb-1">
+            to do 8
         </v-row>
     </v-container>
 </template>
