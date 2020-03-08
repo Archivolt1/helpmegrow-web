@@ -39,7 +39,7 @@
                             Home Garden
                         </div>
                         <div class="text--primary">
-                            Will exceed outdoor heat tolerance on 3/7/2020 at 12:00 PM.
+                            Will exceed outdoor heat tolerance on 3/7/2020 at 12:00 PM
                         </div>
                     </v-card-text>
                     <v-card-actions>
