@@ -43,10 +43,59 @@
                         <!-- Name of diary, Description, Image upload-->
                     </v-card>
                 </v-col>
-                <v-col>
+                <v-col
+                        v-for="item in items"
+                        :key="item.name"
+                        cols="12"
+                        sm="6"
+                        md="4"
+                        lg="3">
                     <v-card class="secondary" dark :align="'center'" width="100%" height="500">
                         <h1 class="display-1 font-weight-light">Current entries</h1>
-                       <!-- Input the current entries for diary-->
+                        <v-container>
+                            <v-data-iterator
+                                    :items="items"
+                                    :items-per-page.sync="itemsPerPage"
+                                    hide-default-footer
+                                    light
+                                    >
+                                <v-list dense>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant1 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant2 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant3 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant4 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant5 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant6 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant7 }}</v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>{{ item.name }}:</v-list-item-content>
+                                        <v-list-item-content class="align-end">{{ item.plant8 }}</v-list-item-content>
+                                    </v-list-item>
+                                </v-list>
+                            </v-data-iterator>
+                        </v-container>
+                        <!-- Input the current entries for diary-->
                     </v-card>
                 </v-col>
             </v-row>
@@ -65,14 +114,15 @@
             expand: false,
             items: [
                 {
-                    name: 'not a tree',
-                    calories: 159,
-                    fat: 6.0,
-                    carbs: 24,
-                    protein: 4.0,
-                    sodium: 87,
-                    calcium: '14%',
-                    iron: '1%',
+                    name: 'a plant',
+                    plant1: "tomato",
+                    plant2: "potato",
+                    plant3: "gnome",
+                    plant4: "gelfond",
+                    plant5: "beans",
+                    plant6: "watermelon",
+                    plant7: "cartography",
+                    plant8: "Union Pacific",
                 },
             ],
         }),
