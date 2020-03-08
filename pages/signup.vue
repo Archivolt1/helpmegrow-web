@@ -32,6 +32,7 @@
                             <v-text-field
                                     :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
                                     :rules="[rules.required, rules.min]"
+                                    :type="show1 ? 'text' : 'password'"
                                     @click:append="show1 = !show1"
                                     dark
                                     hint="At least 8 characters"
@@ -45,6 +46,7 @@
                             <v-text-field
                                     :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
                                     :rules="[rules.required, rules.min]"
+                                    :type="show1 ? 'text' : 'password'"
                                     @click:append="show1 = !show1"
                                     dark
                                     hint="At least 8 characters"
