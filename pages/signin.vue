@@ -25,7 +25,7 @@
                 </v-row>
                 <v-row>
                     <v-col xs="6">
-                        <v-btn depressed>Sign in</v-btn>
+                        <v-btn depressed to="/gardens">Sign in</v-btn>
                     </v-col>
                     <v-col xs="6">
                         <v-checkbox class="mt-0" dark label="Stay signed in" v-model="rem"/>
