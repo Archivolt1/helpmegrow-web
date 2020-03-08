@@ -70,6 +70,11 @@
     //javascript
     export default {
         name: "signup",
+        head() {
+            return {
+                title: "Sign Up"
+            };
+        },
         data() {
             return {
                 // labels: ['SU', 'MO', 'TU', 'WED', 'TH', 'FR', 'SA'],

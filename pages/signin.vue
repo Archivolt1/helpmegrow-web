@@ -5,7 +5,7 @@
                 <h1 class="display-1 font-weight-light white--text">Sign in</h1>
                 <v-row>
                     <v-col>
-                        <v-text-field dark label="Email address" value=""/>
+                        <v-text-field dark label="Email address" outlined value=""/>
                     </v-col>
                 </v-row>
                 <v-row>
@@ -18,21 +18,22 @@
                                 dark
                                 label="Enter Password"
                                 name="input-10-1"
+                                outlined
                                 v-model="password"
                         />
                     </v-col>
                 </v-row>
-                <v-row align="center">
+                <v-row>
                     <v-col xs="6">
-                        <v-btn>Sign in</v-btn>
+                        <v-btn depressed>Sign in</v-btn>
                     </v-col>
                     <v-col xs="6">
-                        <v-checkbox class="mx-2" color="white" dark label="Stay signed in" v-model="rem"/>
+                        <v-checkbox class="mt-0" dark label="Stay signed in" v-model="rem"/>
                     </v-col>
                 </v-row>
             </v-card>
         </v-col>
-        <v-col md="6">
+        <v-col class="pr-0" md="6">
             <img alt="garden" src="/garden.jpg" style="height: auto; min-width: 100%;">
         </v-col>
     </v-row>
@@ -41,8 +42,14 @@
 <script>
     export default {
         name: "signin",
+        head() {
+            return {
+                title: "Sign In"
+            };
+        },
         data() {
             return {
+                rem: false,
                 show1: false,
                 show2: true,
                 show3: false,
@@ -50,7 +57,7 @@
                 password: "",
                 confirmPassword: "",
                 rules: {
-                    required: value => !!value || 'Required.',
+                    required: value => !!value || 'Entry required',
                     min: v => v.length >= 8 || 'Min 8 characters',
                     emailMatch: () => ('The email and password you entered don\'t match'),
                 },
