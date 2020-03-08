@@ -10,7 +10,7 @@
                 <img src="/homepage-splash-1.jpg" alt="Beautiful Garden" style="min-width: 100%; height: 256px;">
             </v-col>
         </v-row>
-        <v-row class="mb-1" justify="center">
+        <v-row class="mb-1" align-content="center">
             <v-col>
 
             </v-col>
