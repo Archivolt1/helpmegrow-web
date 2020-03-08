@@ -29,12 +29,18 @@
                         </v-list-item-icon>
                         <v-list-item-title>Diary</v-list-item-title>
                     </v-list-item>
-                    <v-list-item :key="'agenda'" link to="/agenda">
+                    <v-list-item :key="'alerts'" link to="/alerts">
+                        <v-list-item-icon>
+                            <v-icon color="primary">art_track</v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-title>Diary</v-list-item-title>
+                    </v-list-item>
+                    <!--<v-list-item :key="'agenda'" link to="/agenda">
                         <v-list-item-icon>
                             <v-icon color="primary">view_agenda</v-icon>
                         </v-list-item-icon>
                         <v-list-item-title>Agenda</v-list-item-title>
-                    </v-list-item>
+                    </v-list-item>-->
                     <v-list-item :key="'logout'" link to="/logout">
                         <v-list-item-icon>
                             <v-icon color="primary">exit_to_app</v-icon>

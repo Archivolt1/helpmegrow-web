@@ -1,66 +1,47 @@
 <template>
-    <div>
-    <v-container>
-    <v-row>
-    <v-col>
-    <v-card :align="'center'" flat width="400px">
-        <br></br>
-        <h1 class="display-1 font-weight-light">Welcome back!</h1>
-        <br></br>
-        <v-container justify="" class="secondary">
-            <h1 class="display-1 font-weight-light white--text" >Sign in</h1>
-            <br></br>
-            <v-row>
-                <v-col>
-                    <v-text-field
-                            label="Email address"
-                            value=""
-                            dark
-                    ></v-text-field>
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col>
-                    <v-text-field
-                            v-model="password"
-                            :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
-                            :rules="[rules.required, rules.min]"
-                            :type="show1 ? 'text' : 'password'"
-                            dark
-                            name="input-10-1"
-                            label="Enter Password"
-                            @click:append="show1 = !show1"
-                    ></v-text-field>
-                </v-col>
-            </v-row>
-            <v-row align="center">
-                <v-col cols="6">
-                    <br></br>
-                    <v-btn>Sign in</v-btn>
-                </v-col>
-                <v-col>
-                    <br></br>
-                    <v-checkbox color="white" v-model="rem" class="mx-2" dark label="Stay signed in"></v-checkbox>
-                </v-col>
-            </v-row>
-        </v-container>
-    </v-card>
-    </v-col>
-        <v-col>
-            <br></br>
-            <br></br>
-            <br></br>
-        <img src="garden.jpg" alt="garden" width="100%" height="75%">
+    <v-row :align="'center'" :justify="'center'" class="mt-5 pt-5">
+        <v-col md="6">
+            <v-card class="ma-5 pa-5" color="accent" flat>
+                <h1 class="display-1 font-weight-light white--text">Sign in</h1>
+                <v-row>
+                    <v-col>
+                        <v-text-field dark label="Email address" value=""/>
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col>
+                        <v-text-field
+                                :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                                :rules="[rules.required, rules.min]"
+                                :type="show1 ? 'text' : 'password'"
+                                @click:append="show1 = !show1"
+                                dark
+                                label="Enter Password"
+                                name="input-10-1"
+                                v-model="password"
+                        />
+                    </v-col>
+                </v-row>
+                <v-row align="center">
+                    <v-col xs="6">
+                        <v-btn>Sign in</v-btn>
+                    </v-col>
+                    <v-col xs="6">
+                        <v-checkbox class="mx-2" color="white" dark label="Stay signed in" v-model="rem"/>
+                    </v-col>
+                </v-row>
+            </v-card>
+        </v-col>
+        <v-col md="6">
+            <img alt="garden" src="/garden.jpg" style="height: auto; min-width: 100%;">
         </v-col>
     </v-row>
-    </v-container>
-    </div>
 </template>
 
 <script>
     export default {
         name: "signin",
-        data () {
+        data() {
             return {
                 show1: false,
                 show2: true,
