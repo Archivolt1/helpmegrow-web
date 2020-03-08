@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-row>
+        <v-row class="pl-5 pr-2">
             <v-col xs="4">
                 <v-card class="secondary" dark :align="'center'" style="height: 100%; width: 100%" to="/plants">
                     <h1 class="display-1 font-weight-light">Garden 1</h1>
