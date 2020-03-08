@@ -31,9 +31,9 @@
                     </v-list-item>
                     <v-list-item :key="'alerts'" link to="/alerts">
                         <v-list-item-icon>
-                            <v-icon color="primary">art_track</v-icon>
+                            <v-icon color="primary">notification_important</v-icon>
                         </v-list-item-icon>
-                        <v-list-item-title>Diary</v-list-item-title>
+                        <v-list-item-title>Alerts</v-list-item-title>
                     </v-list-item>
                     <!--<v-list-item :key="'agenda'" link to="/agenda">
                         <v-list-item-icon>

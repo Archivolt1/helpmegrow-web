@@ -4,7 +4,13 @@
 
 <script>
     export default {
-        name: "alerts"
+        name: "alerts",
+        head() {
+            return {
+                title: "Alerts"
+            };
+        },
+        layout: "appDefault",
     }
 </script>
 
